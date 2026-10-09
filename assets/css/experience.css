@@ -1,0 +1,76 @@
+/* =========================
+   EXPERIENCE
+   ========================= */
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(255, 61, 154, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
+.exp-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(155deg, var(--pink), var(--lilac));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #17020e;
+  flex-shrink: 0;
+}
+
+.exp-role {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.exp-org {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--pink-soft);
+  margin-bottom: 14px;
+}
+
+.exp-desc {
+  color: var(--text-dim);
+  max-width: 560px;
+  font-size: 0.95rem;
+}
+
+.exp-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.exp-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  border: 1px solid var(--line);
+  padding: 5px 11px;
+  border-radius: 999px;
+}
+

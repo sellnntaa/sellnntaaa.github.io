@@ -1,0 +1,89 @@
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 900px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions,
+  .hero-tags {
+    justify-content: center;
+  }
+
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exp-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 76px 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 16px;
+    right: 16px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px;
+    transform: translateY(-12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 10px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrap {
+    padding: 36px 22px;
+  }
+
+  .frame-card {
+    width: 230px;
+  }
+}

@@ -1,0 +1,55 @@
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  padding: 34px 0 44px;
+  text-align: center;
+}
+
+footer p {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin: 0;
+}
+
+footer .heart {
+  color: var(--pink);
+}
+
+/* =========================
+   BACK TO TOP
+   ========================= */
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 0.3s;
+  z-index: 90;
+  font-size: 1.1rem;
+}
+
+.to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.to-top:hover {
+  border-color: var(--pink);
+  color: var(--pink-soft);
+}
+
